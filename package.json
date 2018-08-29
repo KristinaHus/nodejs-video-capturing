@@ -1,0 +1,21 @@
+{
+  "name": "node-video-capturing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "env FILE='https://searchwilderness.com/examples/amp-stories/' nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kina",
+  "license": "ISC",
+  "dependencies": {
+    "chrome-remote-interface": "^0.26.1",
+    "chromedriver": "^2.41.0",
+    "chromium": "^1.0.2",
+    "fs": "0.0.1-security",
+    "node-cmd": "^3.0.0",
+    "nodemon": "^1.18.3",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
