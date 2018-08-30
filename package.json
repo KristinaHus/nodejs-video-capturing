@@ -4,18 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "env FILE='https://searchwilderness.com/examples/amp-stories/' nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "env FILE='https://searchwilderness.com/examples/amp-stories/' nodemon test.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startXvfb": "x-recorder start-xvfb --dimesion '1023x1818x32'"
   },
   "author": "Kina",
   "license": "ISC",
   "dependencies": {
+    "chrome-launcher": "^0.10.2",
     "chrome-remote-interface": "^0.26.1",
     "chromedriver": "^2.41.0",
     "chromium": "^1.0.2",
     "fs": "0.0.1-security",
     "node-cmd": "^3.0.0",
     "nodemon": "^1.18.3",
-    "selenium-webdriver": "^4.0.0-alpha.1"
+    "path": "^0.12.7",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "x-recorder": "0.0.1"
+  },
+  "devDependencies": {
+    "child-process": "^1.0.2"
   }
 }
